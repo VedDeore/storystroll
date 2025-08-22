@@ -1,0 +1,51 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_margin="8dp"
+  app:cardElevation="4dp"
+  app:cardCornerRadius="12dp">
+
+  <!-- Layout for the saved treasure item -->
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="12dp"
+    android:gravity="center_vertical">
+
+    <!-- ImageView for the treasure image -->
+    <com.google.android.material.card.MaterialCardView
+      android:id="@+id/imageCard"
+      android:layout_width="80dp"
+      android:layout_height="80dp"
+      app:cardCornerRadius="8dp"
+      app:cardElevation="0dp">
+
+      <ImageView
+        android:id="@+id/treasure_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:contentDescription="@string/treasure_image" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- TextView for the treasure title -->
+    <TextView
+      android:id="@+id/treasure_title"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:textSize="26sp"
+      android:textStyle="bold"
+      android:paddingStart="16dp"
+      android:paddingEnd="16dp"
+      android:ellipsize="end"
+      android:maxLines="1"
+      android:textColor="@color/black"
+      android:gravity="center_vertical" />
+
+  </LinearLayout>
+
+</androidx.cardview.widget.CardView>

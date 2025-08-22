@@ -1,0 +1,14 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+  android:width="24dp"
+  android:height="24dp"
+  android:viewportWidth="24"
+  android:viewportHeight="24">
+  <!-- Circular background -->
+  <path
+    android:fillColor="#FFE0E0E0"
+    android:pathData="M12,2a10,10 0 1,0 0,20a10,10 0 0,0 0,-20z"/>
+  <!-- Smaller profile (person) icon for padding -->
+  <path
+    android:fillColor="#FF444444"
+    android:pathData="M12 13c2.1 0 6.2 1.05 6.2 3.15V18c0 0.55-0.45 1-1 1H6.8c-0.55 0-1-0.45-1-1v-1.85C5.8 14.05 9.9 13 12 13zm0-2a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+</vector>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  app:cardCornerRadius="16dp"
+  app:strokeWidth="2dp"
+  app:strokeColor="#484a48"
+  android:layout_gravity="center"
+  android:padding="16dp">
+
+  <RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <!-- Close Icon -->
+    <ImageView
+      android:id="@+id/close_popup"
+      android:layout_width="40dp"
+      android:layout_height="40dp"
+      android:src="@drawable/ic_close"
+      android:layout_alignParentEnd="true"
+      android:layout_alignParentTop="true"
+      android:contentDescription="@string/close"
+      android:padding="8dp"
+      android:background="?attr/selectableItemBackgroundBorderless"
+      android:clickable="true"
+      android:focusable="true" />
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:padding="24dp"
+      android:gravity="center">
+
+      <!-- Profile Image -->
+      <com.google.android.material.card.MaterialCardView
+        android:id="@+id/imageCard"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="0dp"
+        android:layout_marginBottom="12dp">
+
+        <ImageView
+          android:id="@+id/profile_image"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:contentDescription="@string/profile_image"
+          android:scaleType="fitXY"
+          android:src="@drawable/ic_profile_placeholder"
+          android:background="@drawable/bg_image_rounded" />
+
+      </com.google.android.material.card.MaterialCardView>
+
+      <!-- Name -->
+      <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp" />
+
+      <!-- Email -->
+      <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#888"
+        android:textSize="14sp"
+        android:layout_marginTop="2dp" />
+
+      <!-- Stats Layout -->
+      <LinearLayout
+        android:id="@+id/stats_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="24dp">
+
+        <!-- Treasures -->
+        <LinearLayout
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:orientation="vertical"
+          android:gravity="center">
+
+          <TextView
+            android:id="@+id/total_treasures"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="16sp"/>
+          <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/treasures"
+            android:textSize="12sp"/>
+
+        </LinearLayout>
+
+        <!-- Points -->
+        <LinearLayout
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:orientation="vertical"
+          android:gravity="center">
+
+          <TextView
+            android:id="@+id/total_points"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="16sp"/>
+          <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/points"
+            android:textSize="12sp"/>
+
+        </LinearLayout>
+
+        <!-- Ranking -->
+        <LinearLayout
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:orientation="vertical"
+          android:gravity="center">
+
+          <TextView
+            android:id="@+id/ranking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="16sp"/>
+          <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ranking"
+            android:textSize="12sp"/>
+        </LinearLayout>
+
+      </LinearLayout>
+
+      <!-- Logout Button -->
+      <Button
+        android:id="@+id/logout_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/logout"
+        android:layout_marginTop="32dp"
+        android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+  </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>
